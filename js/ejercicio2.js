@@ -1,6 +1,6 @@
 //Desestructuración en Arrays
 //Declaración del array de estudiantes donde cada estudiante es un objeto
-const students = [
+export const students = [
     {
         nombre: "Alejandro",
         calificacion: "72"
@@ -20,7 +20,7 @@ const students = [
 ];
 
 //Función que permite conocer estudiantes con una calificación superior a 70
-const calificacion = (students) => {
+export const calificacion = (students) => {
     //Se inicializa el array donde se almacenarán los nombres de los estudiantes
     let mejorCalificacion = [];
     //Se recorre cada objeto del array estudiantes, tomando sus propiedades
@@ -34,5 +34,3 @@ const calificacion = (students) => {
     //El retorno de la función es la lista con los nombres de los estudiantes con calificación mayor a 70
     return mejorCalificacion;
 }
-
-console.log(calificacion(students));
